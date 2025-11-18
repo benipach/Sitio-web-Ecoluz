@@ -2,6 +2,9 @@
 
 *{
   font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -91,7 +94,7 @@ body{
 
   .header-izquierda {
     position: static;
-    left: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -125,12 +128,6 @@ body{
 
 
 /* ========== Home ========== */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* Sección Principal */
 .seccion-principal {
@@ -171,7 +168,6 @@ body{
 }
 
 /* Secciones */
-
 .icono {
   font-size: 48px;
   margin-bottom: 16px;
@@ -179,7 +175,8 @@ body{
 
 .tarjeta-porque h3,
 .tarjeta-caracteristica h3,
-.tarjeta-paraquien h3{
+.tarjeta-paraquien h3,
+.elemento-lineadetiempo h3{
   color: #2d5016;
   margin-bottom: 16px;
 }
@@ -273,11 +270,6 @@ section {
   border-left: 3px solid #4a7c2c;
   margin-left: 16px;
   margin-bottom: 24px;
-}
-
-.elemento-lineadetiempo h3 {
-  color: #2D5016;
-  margin-bottom: 8px;
 }
 
 /* Equipo */
