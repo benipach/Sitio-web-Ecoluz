@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoLuz Lite</title>
+  <link rel="icon" href="../imagenes/icono.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<!----- Header ----->
+
+  <header class="header">
+
+    <div class="header-derecha">
+      <nav>
+        <ul class="botones-header">
+          <li><a href="../Home.html" class="boton-header">Home</a></li>
+          <li><a href="../Productos.html" class="boton-header">Productos</a></li>
+          <li><a href="../Nosotros.html" class="boton-header">Nosotros</a></li>
+          <li><a href="../Contacto.html" class="boton-header">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="header-izquierda">
+      <a href="../Home.html"><img src="../imagenes/logo.png" class="logo"></a>
+    </div>
+
+  </header>
+
+<!----- Producto ----->
+
+  <main class="producto-detalle-contenedor">
+    
+    <a href="../Productos.html" class="volver-productos">&leftarrow; Volver a todos los Productos</a>
+    
+    <section class="detalle-principal">
+      <div class="detalle-imagen">
+        <img src="../imagenes/productos/Lite.jpg" class="imagen-grande">
+      </div>
+      
+      <div class="detalle-info">
+        <h1 class="producto-detalle-nombre">EcoLuz Lite</h1>
+        
+        <div class="precio-y-comprar">
+          <p class="producto-detalle-precio">$49.999</p>
+          <label for="modal-compra" class="boton-comprar-ahora">Comprar Ahora</label>
+        </div>
+        
+        <h2 class="subtitulo-detalle">Descripción</h2>
+        <p class="descripcion-larga">La EcoLuz estándar ofrece 20.000 mAh de capacidad con carga solar de 15 W, brindando una iluminación LED regulable y un repelente de insectos, logrando el equilibrio perfecto entre la versatilidad diaria y el uso extendido.</p>
+        
+        <h2 class="subtitulo-detalle">Características</h2>
+        <ul class="lista-caracteristicas">
+          <li>Hecho de polipropileno biobasado</li>
+          <li>Luz led</li>
+          <li>Batería de 15.000 mAh (37h de duración)</li>
+          <li>Carga solar de 15 W (5,6h hasta la carga completa)</li>
+          <li>Repelente de mosquitos regulable</li>
+        </ul>
+      </div>
+      
+    </section>
+  </main>
+
+  <!-- Checkbox oculto para controlar el modal -->
+  <input type="checkbox" id="modal-compra" class="modal-toggle">
+
+  <!-- Modal / Popup -->
+  <div class="modal-overlay">
+    <div class="modal-contenido">
+      
+      <!-- Botón para cerrar -->
+      <label for="modal-compra" class="modal-cerrar">&times;</label>
+      
+      <h2>Finalizar Compra</h2>
+      
+      <form action="https://formspree.io/f/meonjdjk" method="POST" class="formulario-modal">
+        
+        <div class="campo-formulario">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="telefono">Teléfono *</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="direccion">Dirección completa *</label>
+          <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="ciudad">Ciudad *</label>
+          <input type="text" id="ciudad" name="ciudad" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="metodo_pago">Método de pago *</label>
+          <select id="metodo_pago" name="metodo_pago" required>
+            <option value="">-- Selecciona --</option>
+            <option value="transferencia">Transferencia Bancaria</option>
+            <option value="mercadopago">Mercado Pago</option>
+            <option value="efectivo">Efectivo</option>
+          </select>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="comentarios">Comentarios (opcional)</label>
+          <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+        </div>
+
+        <input type="hidden" name="producto" value="EcoLuz Estándar - $59.999">
+
+        <button type="submit" class="boton-enviar-modal">Confirmar Compra</button>
+      </form>
+    </div>
+  </div>
+
+<!----- Footer ----->
+
+  <footer class="footer">
+    <div class="footer-contenido">
+
+      <div class="footer-columna">
+        <h3>Navegación</h3>
+        <ul class="footer-botones">
+          <li><a href="../Home.html">Home</a></li>
+          <li><a href="../Productos.html">Productos</a></li>
+          <li><a href="../Nosotros.html">Nosotros</a></li>
+          <li><a href="../Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-columna">
+        <h3>Información</h3>
+        <p>Tu tienda de confianza. Somos un equipo comprometido con la innovación sostenible y el desarrollo de soluciones prácticas que mejoran la vida cotidiana mientras cuidan el medio ambiente. Nuestro objetivo es demostrar que la tecnología limpia puede ser accesible, funcional y multifuncional.</p>
+      </div>
+    </div>
+    
+    <div class="footer-2">
+      <p>InnovaSol EcoLuz &copy; 2025 - Todos los derechos reservados</p>
+    </div>
+  </footer>
+    
+</body>
+</html>
